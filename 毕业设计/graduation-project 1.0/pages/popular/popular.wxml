@@ -1,0 +1,17 @@
+<block wx:if="{{!showLoading}}">
+<swiper class="banner" indicator-dots="true" autoplay="true">
+    <block wx:for="{{bannerList}}" wx:for-item="bannerItem" wx:for-index="bannerIndex" wx:key="banner">
+        <swiper-item data-type="{{bannerItem.type}}" data-id="{{bannerItem.id}}" bindtap="viewBannerDetail">
+            <image src="{{bannerItem.imgUrl}}" class="banner-item"></image>
+        </swiper-item>
+    </block>
+</swiper>
+</block>
+<block wx:if="{{showLoading}}">
+    <view class="loading">玩命加载中…</view>
+</block>
+<view class="film">
+    <block wx:for="{{films}}"  wx:key="film">
+        <v-film filmItem="{{item}}" catch:tag="viewFilmByTag"></v-film>
+    </block>
+</view>

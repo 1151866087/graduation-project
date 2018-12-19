@@ -1,0 +1,17 @@
+<view data-id="{{filmItem.id}}" class="film-item" catchtap="onJump">
+    <view class="film-cover">
+        <image src="{{filmItem.images.large}}" class="film-cover-img"></image>
+        <view class="film-rating">
+            <block wx:if="{{filmItem.rating.average == 0}}">暂无评分</block>
+            <block wx:else>{{filmItem.rating.average}}分</block>
+        </view>
+    </view>
+    <view class="file-intro">
+        <view class="film-title">{{filmItem.title}}</view>
+        <view class="film-tag">
+            <block wx:for="{{filmItem.genres}}" wx:key="filmTag">
+                <v-tag filmTagItem="{{item}}" catch:tag="viewFilmByTag"></v-tag>
+            </block>
+        </view>
+    </view>
+</view>

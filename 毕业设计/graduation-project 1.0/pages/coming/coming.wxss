@@ -1,0 +1,18 @@
+/* pages/coming/coming.wxss */
+.loading-tip {
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    color: #ccc;
+}
+.film {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30rpx 35rpx;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 0 0 40rpx #f4f4f4 inset;
+}

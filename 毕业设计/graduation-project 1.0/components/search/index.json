@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-tag":"/components/film-tag/index",
+    "v-list":"/components/film-list/index"
+  }
+}

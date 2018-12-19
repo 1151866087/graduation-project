@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/popular/popular",
+    "pages/coming/coming",
+    "pages/top/top",
+    "pages/my/my",
+    "pages/film-detail/film-detail",
+    "pages/my/skin/skin",
+    "pages/search/search",
+    "pages/my/favorite/favorite"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#47a86c",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText":  "电影推荐",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#686868",
+    "selectedColor": "#47a86c",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/popular/popular",
+      "iconPath": "dist/images/popular_icon.png",
+      "selectedIconPath": "dist/images/popular_active_icon.png",
+      "text": "热映"
+    }, {
+      "pagePath": "pages/coming/coming",
+      "iconPath": "dist/images/coming_icon.png",
+      "selectedIconPath": "dist/images/coming_active_icon.png",
+      "text": "待映"
+    },
+    {
+      "pagePath": "pages/search/search",
+      "iconPath": "dist/images/top_icon.png",
+      "selectedIconPath": "dist/images/top_active_icon.png",
+      "text": "搜素"
+    },
+    {
+      "pagePath": "pages/my/my",
+      "iconPath": "dist/images/my_icon.png",
+      "selectedIconPath": "dist/images/my_active_icon.png",
+      "text": "我的"
+    }]
+  }
+}

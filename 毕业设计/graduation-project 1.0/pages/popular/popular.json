@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "正在热映",
+    "usingComponents": {
+        "v-film":"/components/film-list/index"
+    }
+}

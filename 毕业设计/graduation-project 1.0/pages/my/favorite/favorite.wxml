@@ -1,0 +1,7 @@
+<!-- <view >
+    <v-top></v-top>
+</view>
+<view >
+    <v-list></v-list>
+</view> -->
+<view catch:animationend=""></view>

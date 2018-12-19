@@ -1,0 +1,3 @@
+<!-- components/my/nullTip/index.wxml -->
+<view class="null-tip">{{nullTip.tipText}}</view>
+<view bindtap="onJump" class="null-action">{{nullTip.actionText}}</view>

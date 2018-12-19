@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "电影详情",
+    "usingComponents": {
+        "v-tag":"/components/film-tag/index"
+    }
+}

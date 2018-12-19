@@ -1,0 +1,35 @@
+<!-- 收藏页的头用于 选择收藏的内容[人物and电影] -->
+<view class="tab-header">
+    <view class="tab-header-item {{show == 'film_favorite' ? 'tab-header-active' : ''}}" data-type="film_favorite" bindtap="changeViewType">
+        电影
+    </view>
+    <view class="tab-header-item {{show == 'person_favorite' ? 'tab-header-active' : ''}}" data-type="person_favorite" bindtap="changeViewType">
+        人物
+    </view>
+</view>
+<view class="tab-content">
+    <!-- 收藏电影 -->
+    <view class="tab-content-item" hidden="{{show == 'film_favorite' ? false : true}}">
+        <!-- 如果没有收藏显示if  else显示收藏内容 -->
+        <block wx:if="{{film_favorite.length == 0}}">
+           <v-nullTip nullTip="{{nullTip}}"></v-nullTip>
+        </block>
+        <block wx:else>
+            <block wx:for="{{film_favorite}}" wx:key="">
+                <v-favoritemovie filmFavoriteItem="{{item}}"></v-favoritemovie>
+            </block>
+        </block>
+    </view>
+    <!-- 收藏人物 -->
+    <view class="tab-content-item" hidden="{{show == 'person_favorite' ? false : true}}">
+         <!-- 如果没有收藏显示if  else显示收藏内容 -->
+        <block wx:if="{{film_favorite.length == 0}}">
+           <v-nullTip nullTip="{{nullTip}}"></v-nullTip>
+        </block>
+        <block wx:else>
+            <block wx:for="{{film_favorite}}" wx:key="">
+                <v-favoritemovie filmFavoriteItem="{{item}}"></v-favoritemovie>
+            </block>
+        </block>
+    </view>
+</view>

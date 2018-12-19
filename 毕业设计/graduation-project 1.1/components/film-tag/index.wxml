@@ -1,0 +1,4 @@
+<!-- components/film-tag/index.wxml -->
+<view class="film-tag-item"  catchtap="viewFilmByTag" >
+    {{filmTagItem}}
+</view>

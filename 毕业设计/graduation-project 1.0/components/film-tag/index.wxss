@@ -1,0 +1,11 @@
+/* components/film-tag/index.wxss */
+.film-tag-item {
+    padding: 7rpx 8rpx;
+    margin-right: 10rpx;
+    font-size: 24rpx;
+    box-shadow: 0 0 0 1px #ccc;
+
+    border-radius: 15rpx;
+    background-color: #fafafa;
+    color: #666;
+}
