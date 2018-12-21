@@ -1,0 +1,49 @@
+<!-- pages/search/search.wxml -->
+<!-- 搜索栏 -->
+<view class="search">
+    <input bind:confirm="onConfirm" type="text" placeholder="电影推荐" value="{{value}}" bindinput="onInput" />
+    <icon type="search" size="20" color="#999" class="icon" />
+    <icon type="clear" size="20" color="#999" class="icon1" bind:tap="onClear" wx:if="{{isClear}}" />
+    <button bind:tap="onClear">取消</button>
+</view>
+<!-- 搜索标签 -->
+<view class="container" wx:if="{{!isSearch}}">
+    <!-- 历史搜索 -->
+    <view class="content">
+        <text class="history">历史关键字搜索</text>
+        <view class="item">
+            <block wx:for="{{words}}" wx:key="{{index}}">
+                <v-tag filmTagItem="{{item}}" bind:tag="onConfirm"></v-tag>
+            </block>
+        </view>
+    </view>
+    <!-- 热门标签 -->
+    <view class="content">
+        <text class="hots">热门标签</text>
+        <view class="item">
+            <block wx:for="{{hotTag}}" wx:key="{{index}}">
+                <v-tag filmTagItem="{{item}}" bind:tag="viewFilmByTag"></v-tag>
+            </block>
+        </view>
+    </view>
+    <!-- 热门搜索 -->
+    <view class="content">
+        <text class="hots">热门搜索</text>
+        <view class="item">
+            <block wx:for="{{hotKeyword}}" wx:key="{{index}}">
+                <v-tag filmTagItem="{{item}}" bind:tag="onConfirm"></v-tag>
+            </block>
+        </view>
+    </view>
+</view>
+<!-- 设置搜索结果 -->
+<view class="result" wx:key="{{index}}" wx:if="{{isSearch}}">
+    <block wx:for="{{films}}" wx:key="">
+        <v-list filmItem="{{item}}" catch:tag="viewFilmByTag"></v-list>
+    </block>
+</view>
+<!-- 设置搜索结果不存在 -->
+<view class="empoty" wx:if="{{isResult}}">抱歉,你搜索内容不存在</view>
+
+<!-- 设置loading -->
+<!-- <v-loading  wx:if="{{isLoading}}"></v-loading> -->

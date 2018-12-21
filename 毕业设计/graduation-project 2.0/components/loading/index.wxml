@@ -1,0 +1,5 @@
+<!--components/book/loading/index.wxml-->
+<view class="loading">
+    <image src="/images/loading.gif" />
+    <text >正在加载</text>
+</view>

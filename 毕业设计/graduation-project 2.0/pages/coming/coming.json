@@ -1,0 +1,6 @@
+{  
+    "navigationBarTitleText": "即将上映",
+    "usingComponents": {
+        "v-film":"/components/film-list/index"
+    }
+}

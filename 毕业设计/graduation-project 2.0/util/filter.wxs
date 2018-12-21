@@ -1,0 +1,10 @@
+function filterFilms(films) {
+    if(films)
+    {
+        var films = films.slice(0,5)
+        return films
+    }
+}
+module.exports = {
+    filterFilms:filterFilms
+}
