@@ -1,0 +1,7 @@
+.tab-content {
+    margin-top: 110rpx;
+}
+.tab-content-item {
+    box-sizing: border-box;
+    padding: 30rpx;
+}

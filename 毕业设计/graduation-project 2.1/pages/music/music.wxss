@@ -1,0 +1,30 @@
+/**index.wxss**/
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30rpx;
+    border-top:1rpx solid #999; 
+}
+v-nav{
+    position: absolute;
+    bottom: 0rpx;
+    width: 100%;
+}
+page{
+    width: 100%;
+}
+.share{
+    width: 28rpx;
+    height: 28rpx;
+}
+.header-right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+.header-right v-share {
+    vertical-align: bottom;
+    margin-left: 20rpx;
+    font-size: 28rpx;
+    height: 45rpx;
+}

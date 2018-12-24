@@ -1,0 +1,6 @@
+<!--components/classic/nav/index.wxml-->
+<view class="nav">
+    <image src="{{isLatest?noLeft:yesLeft}}" bind:tap="onLeft"/>
+    <text>{{title}}</text>
+    <image src="{{isFirst?noRight:yesRight}}" bind:tap="onRight" />
+</view>

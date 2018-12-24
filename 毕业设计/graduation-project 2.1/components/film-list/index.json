@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "v-tag":"/components/film-tag/index"
+  }
+}

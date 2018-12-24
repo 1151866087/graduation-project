@@ -1,0 +1,15 @@
+<!-- components/classic/date/index.wxml -->
+<!-- <wxs src="../../../utils/filter.wxs" module="tools"></wxs> -->
+<view class="container">
+    <view>
+        <text class="no">No.</text>
+        <text class="index">{{index}}</text>
+        
+        <!-- <text class="index">{{tools.filterIndex(index)}}</text> -->
+    </view>
+    <view class="line"></view>
+    <view class="date">
+        <text>{{tools.filterMonth(month)}}</text>
+        <text class="year">{{year}}</text>
+    </view>
+</view>

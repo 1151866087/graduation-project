@@ -1,0 +1,15 @@
+.nav{
+    background: #f7f7f7;
+    height: 80rpx;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10rpx;
+    margin: 30rpx;
+    font-size: 25rpx;
+}
+.nav image{
+    width: 80rpx;
+    height: 80rpx;
+
+}/* components/classic/nav/index.wxss */

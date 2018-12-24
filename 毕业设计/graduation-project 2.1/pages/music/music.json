@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "v-date":"/components/music/date/index",
+        "v-nav":"/components/music/nav/index",
+        "v-music":"/components/music/music/index",
+        "v-share":"/components/image-button/index"
+    }
+}

@@ -1,0 +1,16 @@
+<!-- 收藏页的头  -->
+<v-header></v-header>
+<view class="tab-content">
+    <!-- 收藏电影 -->
+    <view class="tab-content-item" >
+        <!-- 如果没有收藏显示if  else显示收藏内容 -->
+        <block wx:if="{{film_favorite.length == 0}}">
+           <v-nullTip nullTip="{{nullTip}}"></v-nullTip>
+        </block>
+        <block wx:else>
+            <block wx:for="{{film_favorite}}" wx:key="">
+                <v-favoritemovie filmFavoriteItem="{{item}}" bind:></v-favoritemovie>
+            </block>
+        </block>
+    </view>
+</view>

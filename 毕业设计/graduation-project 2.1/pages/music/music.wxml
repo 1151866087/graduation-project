@@ -1,0 +1,12 @@
+<!-- index.wxml -->
+<view class="header">
+    <v-date index="{{music.index}}"></v-date>
+    <view class="header-right">
+        <!-- <v-like like="{{like}}" count="{{count}}" bind:like="onLike"></v-like> -->
+        <v-share openType="share">
+            <image src="/images/share.png" class="share" slot="image" />
+        </v-share>
+    </view>
+</view>
+<v-music  content="{{music.content}}" image="{{music.image}}" musicUrl="{{music.url}}"></v-music>
+<v-nav title="{{music.title}}" isLatest="{{isLatest}}" isFirst="{{isFirst}}" bind:previous="onPrev" bind:next="onNext"></v-nav>

@@ -1,0 +1,13 @@
+<v-header></v-header>
+<view class="tab-content">
+    <view class="tab-content-item">
+        <block wx:if="{{film_history.length == 0}}">
+            <v-nullTip nullTip="{{nullTip}}"></v-nullTip>
+        </block>
+        <block wx:else>
+            <block wx:for="{{film_history}}" wx:key="filmHistory">
+                <v-history filmHistoryFilmItem="{{item}}"></v-history>
+            </block>
+        </block>
+    </view>
+</view>

@@ -1,0 +1,19 @@
+/* components/my/favorite-movie/index.wxss */
+.history-film-item {
+    display: flex;
+    flex-direction: column;    
+    margin-bottom: 60rpx;
+}
+.history-film-time {
+    margin-bottom: 10rpx;
+    color: #e5e5e5;
+    font-size: 40rpx;
+}
+.history-film-txt {
+    background-color: #fafafa;
+    padding: 5rpx 10rpx;
+    margin-bottom: 10rpx;
+    display: inline-block;
+    font-size: 40rpx;
+    color: #444;
+}

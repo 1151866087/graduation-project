@@ -1,0 +1,5 @@
+<!--components/image-button/index.wxml-->
+<button plain="{{true}}" open-type="{{openType}}" bindgetuserinfo="onGetUserInfo">
+    <!-- plain="{{true}}" 设置成透明-->
+    <slot name="image"></slot>
+</button>

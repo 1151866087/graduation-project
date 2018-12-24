@@ -1,0 +1,53 @@
+/* components/classic/music/index.wxss */
+.music{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+.music .banner{
+    width: 100%;
+    height:500rpx;
+    position: relative;
+    text-align: center;
+}
+.music .banner .bg{
+    height: 450rpx;
+    width: 450rpx; 
+    margin-top: 25rpx; 
+    border-radius: 50%;      
+}
+
+.music .banner .play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120rpx;
+    height: 120rpx;
+    z-index: 100;
+    transform: translate(-50%,-50%);
+}
+.music .icon{
+    width: 60rpx;
+    height:160rpx;
+    position: relative;
+    top: -65rpx;
+    left: -300rpx;
+    z-index: 10;
+}
+.music .content{
+    font-size: 30rpx;
+    line-height: 50rpx;
+}
+.rotate{
+  animation: rotate 12s infinite;
+}
+@keyframes rotate{
+  from{
+    transform: rotate(0deg)
+  }
+  to{
+    transform: rotate(360deg)
+  }
+}

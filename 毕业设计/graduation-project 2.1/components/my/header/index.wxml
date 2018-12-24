@@ -1,0 +1,6 @@
+<!-- components/my/nullTip/index.wxml -->
+<view class="tab-header">
+    <view class="tab-header-item " data-type="film_favorite">
+        电影
+    </view>
+</view>

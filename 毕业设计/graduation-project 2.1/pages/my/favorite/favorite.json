@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "收藏",
+    "usingComponents": {
+        "v-favoritemovie":"/components/my/favorite-movie/index",
+        "v-header":"/components/my/header/index",
+        "v-nullTip":"/components/my/nullTip/index"
+    }
+}

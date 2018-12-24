@@ -1,0 +1,6 @@
+<view class="history-film-item" data-id="{{filmHistoryFilmItem.data.id}}" bindtap="viewFilmDetail">
+    <view class="history-film-time">{{filmHistoryFilmItem.time}}</view>
+    <view class="history-film-intro">
+        <view class="history-film-txt history-film-title">{{filmHistoryFilmItem.data.title}}</view>
+    </view>
+</view>
