@@ -12,7 +12,7 @@ var data = [
         url:"http://localhost:3000/public/images/1.1.mp3"
     },
     {
-        content: "&nbsp;&nbsp;当璀璨的彗星在夜空绽放时，两地的男女主角都若有所思。他们能感到内心的颤动，却不清楚这颤动因何而起。记忆中恍惚牵挂的那个人，却随着梦境的消失若隐若现。",
+        content: "当璀璨的彗星在夜空绽放时，两地的男女主角都若有所思。他们能感到内心的颤动，却不清楚这颤动因何而起。记忆中恍惚牵挂的那个人，却随着梦境的消失若隐若现。",
         fav_nums: 0,
         id: 2,
         image: "http://localhost:3000/public/images/你的名字.jpg",
